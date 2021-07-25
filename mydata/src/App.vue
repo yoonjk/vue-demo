@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header />
-    <router-view/>
+    <div id="content" class="content">
+      <router-view/>
+    </div>
     <Footer />
 
   </div>
@@ -28,6 +30,5 @@ html,body{padding:0; margin:0;}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

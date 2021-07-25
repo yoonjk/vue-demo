@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import HelloWorld from '@/components/HelloWorld'; //메인 컴포넌트 호출
-import List from '@/components/board/List'; //게시판 리스트 컴포넌트 호출
-import EventEx from '@/components/board/EventEx'; //EventEx 컴포넌트 호출
+import List from '@/views/board/List'; //게시판 리스트 컴포넌트 호출
+import EventEx from '@/views/board/EventEx'; //EventEx 컴포넌트 호출
 
 Vue.use(Router); //vue 라우터 사용
 
