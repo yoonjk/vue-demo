@@ -8,9 +8,9 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item to="/board/list">메뉴1</b-nav-item>
-		<b-nav-item to="/board/eventEx">이벤트</b-nav-item>
-		<b-nav-item href="#">메뉴3</b-nav-item>
-		<b-nav-item href="#">메뉴4</b-nav-item>
+        <b-nav-item to="/board/eventEx">이벤트</b-nav-item>
+        <b-nav-item to="/board/storeEx">Store</b-nav-item>
+        <b-nav-item href="#">메뉴4</b-nav-item>
         <b-nav-item href="#" disabled>Disabled</b-nav-item>
       </b-navbar-nav>
 
