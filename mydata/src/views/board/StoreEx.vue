@@ -16,6 +16,22 @@
         <input type="text" v-model="module2Value">
         <button type="button" @click="changeModule2Value">변경</button>
 
+        <p>module3 값 변경</p>
+        <div class="vuex">
+
+            <h1>Vuex 화면 입니다.</h1>
+            count : {{ module3 }}
+        </div>
+
+        <div class="hello">
+
+            <b>count 2 : {{doneTodosCount}}</b><br>
+            <b>count 3 : {{getTodoById(1)}}</b><br>
+            <b>count 4 : {{inc}}</b><br>
+            <b>count 5 : {{ module3 }}</b><br>
+            <b>count 6 : {{ getCnt }}</b><br>
+            <b>count 7 : {{ module3 }}</b><br>
+        </div>    
     </div>
 </template>
 <script>
@@ -40,11 +56,16 @@ export default {
   computed: {
     ...mapState({
       module1: state => state.module1.module1Value,
-      module2: state => state.module2.module2Value
+      module2: state => state.module2.module2Value,
+      module3: state => state.module3.count
     }),
     ...mapGetters({
       module1ValueWithHello: 'module1ValueWithHello',
-      module2ValueWithHello: 'module2ValueWithHello'
+      module2ValueWithHello: 'module2ValueWithHello',
+      doneTodosCount: 'doneTodos',
+      getTodoById: 'getTodoById',
+      getCnt: 'getCount',
+      inc: 'inc'
     })
   },
   components: {
